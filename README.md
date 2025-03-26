@@ -1,80 +1,34 @@
-# Josh-Talks-interview
-Table of Contents
-Overview
+# Josh-Talks-interview Task Management API
+A Django + Django REST Framework application to manage tasks and assign them to multiple users.
 
-Features
+Overview:
+  This API provides endpoints to:
 
-Tech Stack
+  1.Create tasks with a name, description, type, status, timestamps, etc.
 
-Requirements
+  2.Assign tasks to one or more users.
 
-Project Structure
+  3.Retrieve tasks assigned to a specific user.
 
-Setup Instructions
+A custom User model is included with fields like mobile, and the admin interface allows easy management of users and tasks.
 
-API Endpoints
+Features:
+  1.Simple Data Model: A Task model with all required fields (name, description, created_at, etc.) and a User model with additional fields like email and mobile.
 
-Example Usage via Postman
+  2.Many-to-Many Relationship: A single task can be assigned to multiple users; each user can have multiple tasks.
 
-Testing & Validation
+  3.Django Admin Integration: Easily manage tasks and users from the admin dashboard.
 
-Contributing
+  4.RESTful Endpoints: Clear, well-documented API calls for creating, assigning, and retrieving tasks.
 
-License
+Tech Stack:
 
-Overview
-This Task Management API provides a simple way to:
+  1.Language: Python 3.8+
 
-Create tasks with basic details (name, description).
+  2.Framework: Django (5.1+) and Django REST Framework
 
-Assign tasks to one or multiple users.
+  3.Database: SQLite (default) or any other supported database
 
-Fetch tasks assigned to a specific user.
+  4.Version Control: Git
 
-It’s built using Django and Django REST Framework, following best practices for maintainability and clarity.
-
-Features
-Create a New Task
-
-Capture name, description, and optional fields like task type and status.
-
-Assign a Task to Users
-
-Use a single API call to assign an existing task to multiple users simultaneously.
-
-List Tasks for a Given User
-
-Return all tasks that a specific user is assigned to.
-
-Custom User Model
-
-Includes fields like name, email, mobile, plus built-in username/password.
-
-Admin Panel
-
-Manage users and tasks in a friendly web interface.
-
-Tech Stack
-Language: Python 3.8+
-
-Framework: Django (5.1+) & Django REST Framework
-
-Database: SQLite (by default)
-
-Others:
-
-Virtual environment recommended (venv)
-
-Git for version control
-
-Requirements
-Python 3.8+
-
-Pip (Python package manager)
-
-Django 5.1+
-
-Django REST Framework
-
-(Optional) Git for version control
 
